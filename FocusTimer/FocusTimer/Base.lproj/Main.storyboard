@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FocusTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="177" translatesAutoresizingMaskIntoConstraints="NO" id="i73-wd-SoZ">
+                                <rect key="frame" x="35" y="785" width="344" height="37"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2c-18-Dkm">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="37"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="25"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBk-cB-8rE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZP-53-6AK">
+                                        <rect key="frame" x="268" y="0.0" width="76" height="37"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="25"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djz-SO-E54"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st3-YS-kkl">
+                                <rect key="frame" x="87" y="194" width="240.5" height="80"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1f-Gy-0qN">
+                                <rect key="frame" x="0.0" y="407" width="221" height="50"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Short Break">
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="shortBreakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3Q-F0-Dsv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbo-2L-2Vz">
+                                <rect key="frame" x="94" y="509" width="226" height="203"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7T-o9-gnM"/>
+                                    <action selector="catFactButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Syt-d5-nsH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAT FACT BUTTON" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bj-TZ-9XG">
+                                <rect key="frame" x="94" y="509" width="226" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="wkA-pW-eg7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-mQ-cVi">
+                                <rect key="frame" x="192" y="595.5" width="30" height="30"/>
+                                <connections>
+                                    <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xjx-T0-0LM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ฅ^•ﻌ•^ฅ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iC-bh-QMn">
+                                <rect key="frame" x="66" y="362" width="282" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="8d0-Nm-2Ig"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-qm-49G">
+                                <rect key="frame" x="130.5" y="79" width="153.5" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="XKn-Bt-CtZ"/>
+                                </constraints>
+                                <string key="text">         |\___/|
+         =) ^Y^ (=   
+          \  ^  /
+          )=*=(      
+          /     \
+          |     |
+         /| | | |\
+          \| | |_|/\
+ _/\_/\_/\ _/\_/\_/\_/\_/\_/\_/\_/\_/\_
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7c-gA-40c">
+                                <rect key="frame" x="273" y="407" width="121" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ctH-6N-a0n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="20"/>
+                                <state key="normal" title="Long Break">
+                                    <color key="titleShadowColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="longBreakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJK-lG-62b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6iC-bh-QMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="10c-mo-OYt"/>
+                            <constraint firstItem="hnV-qm-49G" firstAttribute="centerX" secondItem="VIL-mQ-cVi" secondAttribute="centerX" id="5E9-EC-bL0"/>
+                            <constraint firstItem="i73-wd-SoZ" firstAttribute="top" secondItem="1bj-TZ-9XG" secondAttribute="bottom" constant="73" id="6AU-6B-VDS"/>
+                            <constraint firstItem="1bj-TZ-9XG" firstAttribute="centerY" secondItem="Mbo-2L-2Vz" secondAttribute="centerY" id="6qF-qL-hba"/>
+                            <constraint firstItem="1bj-TZ-9XG" firstAttribute="centerY" secondItem="VIL-mQ-cVi" secondAttribute="centerY" id="A9M-cO-SBi"/>
+                            <constraint firstItem="st3-YS-kkl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="EQg-4j-2S7"/>
+                            <constraint firstItem="1bj-TZ-9XG" firstAttribute="top" secondItem="Mbo-2L-2Vz" secondAttribute="top" id="Eus-eQ-zIm"/>
+                            <constraint firstItem="6iC-bh-QMn" firstAttribute="top" secondItem="st3-YS-kkl" secondAttribute="bottom" constant="88" id="I15-ul-KCc"/>
+                            <constraint firstItem="1bj-TZ-9XG" firstAttribute="leading" secondItem="Mbo-2L-2Vz" secondAttribute="leading" id="Lhz-xV-ytt"/>
+                            <constraint firstItem="T7c-gA-40c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="y1f-Gy-0qN" secondAttribute="trailing" constant="8" symbolic="YES" id="LpC-gZ-Hou"/>
+                            <constraint firstItem="y1f-Gy-0qN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rd7-Gc-qT3"/>
+                            <constraint firstItem="1bj-TZ-9XG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Xgi-Bg-uYU"/>
+                            <constraint firstItem="hnV-qm-49G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Zk0-xi-RBO"/>
+                            <constraint firstItem="T7c-gA-40c" firstAttribute="top" secondItem="y1f-Gy-0qN" secondAttribute="top" id="hvk-Nb-jQF"/>
+                            <constraint firstItem="hnV-qm-49G" firstAttribute="centerX" secondItem="6iC-bh-QMn" secondAttribute="centerX" id="kIl-gr-rMd"/>
+                            <constraint firstItem="hnV-qm-49G" firstAttribute="centerX" secondItem="1bj-TZ-9XG" secondAttribute="centerX" id="ldk-iG-k1n"/>
+                            <constraint firstItem="T7c-gA-40c" firstAttribute="baseline" secondItem="y1f-Gy-0qN" secondAttribute="firstBaseline" id="lku-ZT-cLa"/>
+                            <constraint firstItem="hnV-qm-49G" firstAttribute="centerX" secondItem="Mbo-2L-2Vz" secondAttribute="centerX" id="lzB-ep-13o"/>
+                            <constraint firstItem="1bj-TZ-9XG" firstAttribute="top" secondItem="T7c-gA-40c" secondAttribute="bottom" constant="52" id="miz-Tf-QPi"/>
+                            <constraint firstItem="T7c-gA-40c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nZu-fq-1HH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i73-wd-SoZ" secondAttribute="bottom" constant="40" id="swI-t9-tWE"/>
+                            <constraint firstItem="i73-wd-SoZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="taE-Em-zpT"/>
+                            <constraint firstItem="st3-YS-kkl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v04-fv-J4S"/>
+                            <constraint firstItem="T7c-gA-40c" firstAttribute="leading" secondItem="y1f-Gy-0qN" secondAttribute="trailing" constant="52" id="vZT-xT-W5J"/>
+                            <constraint firstItem="hnV-qm-49G" firstAttribute="centerX" secondItem="st3-YS-kkl" secondAttribute="centerX" id="w6T-xu-vrT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i9l-2n-AfQ"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="T2c-18-Dkm" id="djD-f0-F9t"/>
+                        <outlet property="catFactButton" destination="Mbo-2L-2Vz" id="iYd-6q-YWb"/>
+                        <outlet property="catFactLabel" destination="1bj-TZ-9XG" id="2xf-eI-la2"/>
+                        <outlet property="longBreakButton" destination="T7c-gA-40c" id="kK2-7m-UOf"/>
+                        <outlet property="shortBreakButton" destination="y1f-Gy-0qN" id="RL3-ZR-GDc"/>
+                        <outlet property="startButton" destination="eZP-53-6AK" id="6q3-wo-I0M"/>
+                        <outlet property="timeLabel" destination="st3-YS-kkl" id="YZz-ex-5lK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
