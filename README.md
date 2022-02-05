@@ -1,4 +1,4 @@
-# CSCI_39545_ThomasLaurel
+# https://github.com/Tommissed/Pawmodoro-Focus-Timer
 Pawmodoro: Focus Timer, using the Cat Facts API
 
 This is my pomodoro focus timer app. It's main function is to time 25 minutes of focus and to time either a 5 or 15 minute break. It uses the Cat Facts API to allow the user to distract themselves from their work without taking them away from their work for too long.
