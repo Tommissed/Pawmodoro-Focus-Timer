@@ -5,4 +5,4 @@ This is my pomodoro focus timer app. It's main function is to time 25 minutes of
 
 My reasoning behind creating this app, was that I found that a lot of people have a fairly short attention span when it comes to doing work and having a non-time consuming way to distract oneself would overrall help them focus in the long run. During testing, by playing with the cat facts, I felt less inclined to go find another way to waste time. 
 
-I use the cat facts API provided by herokuapp.
+I use the cat facts API provided by herokuapp. My code can be found in the ViewController.swift file.
